@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(53, 59, 67);
+    font: normal 15pt arial;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 5px 5px 15px black;
+}
+
+section {
+    display: block;
+    background-color: white;
+    width: 500px;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.685);
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+
+.divEntrada {
+    width: 220px;
+    background-color: rgba(152, 152, 152, 0.801);
+    border-radius: 20px;
+    padding: 5px 15px 5px 15px;
+    font-weight: bold;
+    height: 190px;
+    margin: auto;
+    border: solid 3px;
+}
+
+.divEntrada input {
+    border-radius: 20px;
+    border-style: solid;
+    background-color: rgba(214, 214, 214, 0.549);
+    padding: 8px;
+    width: 100px;
+    float: right;
+}
+
+.divEntrada .botao {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin-top: 10px;
+    border: solid rgba(46, 46, 46, 0.535);
+    float: right;
+}
+
+.divResultado {
+    margin: 10px;
+    text-align: justify;
+}

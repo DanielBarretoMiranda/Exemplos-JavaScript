@@ -1,0 +1,42 @@
+body {
+    background-color: rgba(25, 30, 39, 0.832);
+    font: normal 15pt arial;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+}
+
+section {
+    display: block;
+    background-color: white;
+    width: 500px;
+    color: black;
+    border-radius: 10px;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.685);
+}
+
+div {
+    padding: 10px;
+    display: block;
+}
+
+div p {
+    padding: 1px;
+}
+
+select {
+    width: 150px;
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 14</title>
+    <link rel="stylesheet" href="ex15.css">
+</head>
+
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <form>
+                <p> <label for="txtanoNasc">Ano de nascimento: </label>
+                    <input type="number" name="txtanoNasci" id="txtAno">
+                </p>
+                <p id="error1"></p>
+                <p> Genêro:
+                    <input type="radio" name="radioSx" id="mas">
+                    <label for="txtsx">Masculino</label>
+
+                    <input type="radio" name="radioSx" id="fem">
+                    <label for="fem">Feminino</label>
+                </p>
+                <p id="error2"></p>
+                <p>
+                    <input type="button" value="VERIFICAR" onclick="verificar()">
+                </p>
+            </form>
+        </div>
+        <div id="resultado">
+            Preencha os dados a cima para ver o resultado!
+        </div>
+    </section>
+    <footer>@danielbarretomiranda07</footer>
+    <script type="text/javascript" src="ex15.js"></script>
+</body>
+
+</html>
