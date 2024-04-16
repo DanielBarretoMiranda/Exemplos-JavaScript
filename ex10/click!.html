@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Click!.css">
+    <title>Click</title>
+</head>
+<body>
+
+    <div class="div-bot" id="div-bot">
+        <div id="div-conteudo-bot">
+            <h1 id="titulo">Clique!</h1>
+            <img src="button.png" id="button" onclick="clicar()">
+            <div id="codigoCor" class="codigoCor"></div>
+            <!--<h1>Quer realmente parar?</h1>
+            <button onclick="confirmarParada(0)">SIM</button>
+            <button onclick="confirmarParada(1)">NÃO</button>-->
+        </div>   
+    </div>
+
+    <div class="div-capa" id="div-capa"></div>
+    
+    <div class="div-aviso" id="div-aviso">
+        <div class="div-aviso-conteudo">
+            <h2>Aviso</h2>
+            <p>Clique em qualquer cor do fundo e veja o código dela!</p>
+        </div>
+        <div>
+            <button id="button-fechar" onclick="fecharAviso()">FECHAR</button>
+        </div>
+    </div>
+
+    <div class="div-rgb" id="div-rgb">
+        <div class="div-quadrado-rgb" id="div-quadrado-rgb"></div>
+        <p id="p-resultado-rgb"></p>
+        <button id="button-fechar" onclick="fecharAviso()">FECHAR</button>
+    </div>
+
+    <div class="div-final" id="div-final">
+        <!--<div><h2>Você Parou</h2>e clicou no botão<h2>X</h2>vezes</div>
+        <button onclick="recomecar()">Recomeçar</button>-->
+    </div>
+
+    <div id="div-parar" class="div-parar" onclick="chamarParada()">PARAR DE CLICAR</div>
+    <!--<div class="div-cores" name="div-cores" style="background-color: rgb(0, 0, 255);" onclick="verificarRGB('rgb(0, 0, 255)')"></div>-->
+    <script src="click!.js"></script>
+</body>
+</html>
