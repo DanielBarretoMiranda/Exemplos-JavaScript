@@ -1,0 +1,370 @@
+/*
+ Estilo Geral 
+*/
+
+body {
+    color: #FFFF00;
+    font-size: 16px;
+    background-color: rgba(85, 17, 119, 1);
+    font-family: 'Open Sans', sans-serif;
+} 
+
+a:link { 
+    color:#FFFF00; text-decoration:none; 
+} 
+
+a:visited { 
+    color:#EEEE00; text-decoration:none;
+} 
+
+   /*
+    Estilo Seções
+   */
+
+header {
+    display:block;
+    text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+   } 
+   
+nav {
+    display:block;
+    font-size: 18px;
+    font-family: 'Mulish', sans-serif;
+    border-bottom: 2px solid;
+    padding-bottom: 4px;
+    text-align: center;
+    margin: 2px;
+} 
+
+section {
+    display: block;
+} 
+
+footer {
+    clear: both;
+}
+
+   /*
+    Estilo Header
+   */
+
+.ender {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 10px;
+    border-top: 2px solid;
+} 
+img.imgLogo {
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+} 
+
+   /* 
+   Estilo Nav 
+   */
+
+nav .menu { 
+    margin: 1px auto;
+}
+
+nav .botao {
+    width: 120px;
+    display: inline-block;
+    margin: 0px 4px 0px 4px;
+    padding: 0px 4px 0px 4px;
+} 
+
+   /*
+    Estilo Seção Apresentação
+   */ 
+
+div.apres {
+    text-align: center;
+    font-size: 18px;
+}
+
+/*
+ Estilo Página Tempo de Mascaras
+*/
+
+div.ilustMasc {
+    margin: auto;
+    text-align: center;
+}
+
+img.imgMasc {
+    margin: auto;
+    border: 4px solid Orange;
+}
+
+ul.lisDescricao {
+    color: #FFFF00;
+    font-size: 18px;
+    list-style-type: square;
+}
+
+ul.lisCarac {
+   font-size: 16px;
+   list-style-image: url('Imagens/Seta18.png'); 
+} 
+
+.lisCarac li {
+    padding-top: 20px;
+}
+
+/* Trablho 2º trimestre*/
+
+.imgCorMasc {
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    border: 2px solid Orange;
+    cursor: pointer;
+}
+
+.modalMascara {
+    display: none;
+    z-index: 999;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.571);
+}
+
+.janInfo {
+    padding: 0 30px 10px 30px;
+    text-align: center;
+    background-color: #551177;
+    border: 4px solid black;
+}
+
+.capa {
+    display: none;
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.871);
+}
+
+button {
+    cursor: pointer;
+}
+
+/*
+ Estilo Página Configurações de Camisas 
+ */
+
+.tabInfo {
+    color: #2255AA;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #FFFFCC;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tabInfo td, .tabInfo th {
+    border: 3px solid #77CCDD;
+    padding: 6px 6px 4px 6px;
+} 
+
+.tabInfo .linTH {
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #0099DD;
+} 
+
+.tabInfo .colTH {
+    width: 104px;
+    color: #005599;
+    text-align: center;
+    background-color: #FFFFFF;
+} 
+
+.tabInfo img {
+    width: 250px;
+    height: 312px;
+}
+
+.tabInterna {
+    width: 100%;
+   margin: 0; 
+}
+
+.tabInterna th {
+    width: 50%;
+}
+
+.tabInterna img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Trablho 2º trimestre*/
+
+.tabInfo .colMenu {
+    text-align: center;
+    width: 120px;
+    cursor: pointer;
+}
+
+.tabInfo .imgCel {
+    text-align: center;
+    background-color: white;
+}
+
+.colMenu a:link, .colMenu a:visited {
+    color: #005599;
+}
+
+
+/*
+ Estilo Formulários
+*/
+
+.divCompras {
+    color: #2255AA;
+    border: 2px solid #77CCDD;
+    margin: 20px auto;
+    padding: 6px 6px 15px 6px;
+    background-color: #EEEEAA;
+    width: 800px;
+} 
+
+/*
+ Elementos do Formulário 
+ */
+
+.listaCompras {
+    float: right;
+    width: 230px;
+    height: 230px;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.colLabSelProd {
+    width: 260px;
+    height: 40px;
+    float: left;
+}
+
+.colSelProd {
+    width: 160px;
+    float: right;
+}
+
+.linhaProdSel {
+    float: left;
+    width: 250px;
+    margin-bottom: 6px;
+}
+
+.elemEsq {
+    float: left;
+    display:block;
+}
+
+.elemDir {
+    float: right;
+    display: block;
+}
+
+.botoes {
+    text-align: right;
+    margin: 20px 10px 0px 10px;
+}
+
+/* 
+Tamanho de Input 
+*/
+
+.inpGrande { width: 400px; }
+
+.inpMedio { width: 80px; }
+
+.inpNCC { width: 130px; }
+
+.inpTelef { width: 90px; }
+
+.inpEnder { width: 200px; height: 60px; }
+
+.numDD { width:30px; }
+
+.numQD { width:50px; }
+
+/*
+Fieldsets 
+*/
+   
+.fsEsq {
+    float: left;
+    display: inline;
+    margin: 0px 0px 0px 0px;
+}
+.fsDir {
+    float: right;
+    display: inline;
+    margin: 0px 0px 0px 0px;
+}  
+
+.inpGrande {
+    width: 400px;
+}
+
+.impNCC {
+    width: 130px;
+}
+
+.impTelef {
+    width: 90px;
+}
+
+.impEnder {
+    width: 200px;
+    height: 60px;
+}
+
+.numDD {
+    width: 30px;
+}
+
+.numQD {
+    width: 50px;
+}
+
+.divLinha {
+    margin-bottom: 6px;
+}
+
+.colPri {
+    float: left;
+    display: block;
+    width: 90px;
+}
+
+.colPriCompras {
+    float: left;
+    display: block;
+    width: 86px;
+}
+
+.colPriPag {
+    float: left;
+    display: block;
+    width: 250px;
+}
+
+.comprasFeitas {
+    width: 230px;
+    height: 180px;
+    float: right;
+    margin: 8px 0px 10px 0px;
+}

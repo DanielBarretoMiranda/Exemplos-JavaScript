@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-08">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Camisas do Outro Mundo</title>
+    <base target="_blank" />
+    <link href="https://fonts.googleapis.com/css?family=Mulish" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=s wap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="COM.css" />
+</head>
+<body>
+    <header>
+        <img src="Imagens/LogoCOM_Topo.png"/></header>
+        <nav>
+            <div class="menu">
+                <span class="botao">
+                    <a href="COM.html"> inicial </a>
+                </span> 
+                <span class="botao">
+                    <a href="2_COM.html"> mascaras </a>
+                </span>
+                <span class="botao">
+                    <a href="4_Camisas.html"> camisas </a>
+                </span> 
+                <span class="botao">
+                    <a href="5_Compras.html"> compras </a>
+                </span> 
+            </div>
+        </nav>
+    <section> 
+        <div class="divCompras">
+            <form action="6_Dados.html" method="POST">
+                <fieldset>
+					<legend>Identificação</legend>
+					<div class="divLinha">
+						<label class="colPri" for="Nome">Nome: </label>
+						<input class="inpGrande" type="text" name="Nome" onclick="teste()">
+					</div>
+					<div class="divLinha">
+						<label class="colPri" for="Email">Email: </label>
+						<input class="inpGrande" type="email" name="Email">
+					</div>
+					<div class="divLinha">
+						<label class="colPri" for="Endereço">Endereço: </label>
+						<textarea class="impEnder" name="Endereço"></textarea>
+						<fieldset class="fsDir">
+							<legend>Genero: </legend>
+							<input type="radio" name="Genero" id="Masculino" value="Masculino">
+							<label for="Masculino">Mas</label>
+							<input type="radio" name="Genero" id="Feminino" value="Feminino">
+							<label for="Feminino">Fem</label>
+							<input type="radio" name="Genero" id="Outros" value="Outro">
+							<label for="Outros">Outro</label>
+						</fieldset>
+					</div>
+					<div class="divLinha">
+						<fieldset class="fsDir">
+							<legend>Nascimento: </legend>
+							<div class="divLinha">
+								<input class="numDD"  type="number" name="Dia" maxlength="2" min="1" max="31">
+								<label for="Dia">/</label>
+								<input class="numDD" type="number" name="Mes" maxlength="2" min="1" max="12">
+								<label for="Mes">/</label>
+								<input class="numQD" type="number" name="ano" maxlength="4" min="1900" max="2023">
+							</div>		
+						</fieldset>
+						<div class="divLinha">
+							<label class="colPri" for="Telefone">Telefone: </label>
+							<input class="numDD" type="text" name="Telefone" maxlength="2">
+						</div>
+						<div>
+							<label class="colPri" for="Celular">Celular: </label>
+							<input class="numQD" type="text" name="Celular" maxlength="4">
+						</div>
+					</div>
+				</fieldset>
+                <fieldset>
+                    <legend> Seleção de Produtos e Lista de Compras</legend>
+                    <textarea class="listaCompras" name="listaPedidos" id="listaPedidos" readonly></textarea> 
+                    <fieldset>
+                        <legend> Selecionado</legend> 
+                        <label class="colLabSelProd" >Produto: 
+                            <Select name="selProduto" id="selProduto" class="colSelProd" onchange="prodSel()"> 
+                                <option>---</option>
+                                <optgroup label="Camisa">
+                                    <option value="Lisa">Lisa</option>
+                                    <option value="Mercurio">Mercúrio</option>
+                                    <option value="Venus">Venus</option>
+                                    <option value="Terra">Terra</option>
+                                    <option value="Marte">Marte</option>
+                                    <option value="Jupiter">Jupiter</option>
+                                    <option value="Saturno">Saturno</option>
+                                    <option value="Urano">Urano</option>
+                                    <option value="Netuno">Netuno</option>
+                                    <option value="Plutão">Plutão</option>
+                                </optgroup> 
+                                <optgroup label="Mascara">
+                                    <option value="Lisa">Lisa</option>
+                                    <option value="Cometa">Cometa</option>
+                                </optgroup> 
+                            </select> 
+                        </label>
+                        <label class="colLabSelProd">Cor:
+                            <Select name="selCor" class="colSelProd" id="selCor" onchange="desc()" disabled> 
+                                <option>---</option>
+                                <option value="Pr">Preto</option> 
+                                <option value="Br">Branco</option> 
+                                <option value="Az">Azul</option disabled> 
+                                <option value="Li">Lilas</option disabled> 
+                            </select>
+                        </label>
+                        <label class="colLabSelProd" >Tamanho: 
+                            <Select name="selTamanho" class="colSelProd" id="selTam" onchange="desc()" disabled> 
+                                <option>---</option>
+                                <option value="P">Pequena</option>
+                                <option value="M">Media</option>
+                                <option value="G">Grande</option>
+                                <option value="GG">Extra Grande</option>
+                            </select>
+                        </label>
+                        <label class="colLabSelProd" >Modelo: 
+                            <Select name="selModelo" class="colSelProd" id="selMod" onchange="desc()" disabled> 
+                                <option>---</option>
+                                <option value="TS">T-Shirt</option> 
+                                <option value="BL">Baby Look</option> 
+                                <option value="SM">Sem Manga</option> 
+                            </select> 
+                        </label>
+                        <input class="linhaProdSel" type="text" name="TXTdesc" id="txtDesc" readonly/>
+                        <input class="elemEsq" type="button" value="Comprar" onclick="comprar()"/>
+                        <label class="elemDir" for="TxtPreco">R$  
+                            <input type="text" name="TxtPreco" readonly class="inpMedio" id="TxtPreco"/>
+                        </label>
+                    </fieldset> 
+                    <label class="elemDir" for="TxtTotal"><br/>Total R$ 
+                        <input type="text" name="TxtTotal" id="TxtTotal" class="inpMedio" readonly/>
+                    </label> 
+                </fieldset>
+                <div class="botoes">
+                    <input type="submit" value="Continuar"/>
+                    <input type="reset" value="Limpar"/>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <address class="ender">
+            Via Lactea, 1234 / Tel: (21) 98765-4321 /
+            <a href="mailto:contato@camplanetas.com.br">contato@camplanetas.com.br</a>
+        </address> 
+    </footer>
+    <script src="Js/Compras.js"></script>
+</body>
+</html>
